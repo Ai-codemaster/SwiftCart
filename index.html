@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SwiftCard</title>
+    <title>SwiftCart</title>
 
     <!-- Tailwind & Daisy UI CDN -->
     <link
@@ -36,21 +36,37 @@
   <body>
     <!-- Header Section -->
 
-    <header class="px-[4%] py-2">
+    <header>
       <nav class="flex justify-between items-center relative">
         <!-- Logo -->
-        <div class="text-[var(--primary)] font-extrabold text-xl">SeiftCart</div>
-        <!-- Menu -->
-        <div class="order-3 absolute top-full right-1/2 translate-x-1/2">
+        <div>SwiftCart</div>
+        <!-- Desktop Menu -->
+        <div class="hidden">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#"></a>Home</li>
+            <li><a href="#"></a>Products</li>
+            <li><a href="#"></a>About</li>
+            <li><a href="#"></a>Contact</li>
           </ul>
         </div>
-        <!-- Shoping Icon -->
-         <div><i class="fa-solid fa-cart-shopping order-2"></i></div>
+        <!-- Right Side Icon -->
+        <div>
+          <!-- Shoping Card -->
+          <i class="fa-solid fa-cart-shopping"></i>
+
+          <!-- Mobile Menu Icon -->
+          <button>☰</button>
+        </div>
+
+        <!-- Mobile Dropdown -->
+        <div class="absolute top-full left-0 w-full text-center">
+          <ul>
+            <li><a href="#"></a>Home</li>
+            <li><a href="#"></a>Products</li>
+            <li><a href="#"></a>About</li>
+            <li><a href="#"></a>Contact</li>
+          </ul>
+        </div>
       </nav>
     </header>
 
