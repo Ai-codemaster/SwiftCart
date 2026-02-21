@@ -37,34 +37,49 @@
     <!-- Header Section -->
 
     <header>
-      <nav class="flex justify-between items-center relative">
+      <nav class="flex justify-between items-center relative px-[4%] py-2">
         <!-- Logo -->
-        <div>SwiftCart</div>
+        <div class="text-[var(--primary)] text-2xl font-extrabold">
+          <a href="#">SwiftCart</a>
+        </div>
         <!-- Desktop Menu -->
         <div class="hidden">
           <ul>
-            <li><a href="#"></a>Home</li>
-            <li><a href="#"></a>Products</li>
-            <li><a href="#"></a>About</li>
-            <li><a href="#"></a>Contact</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div>
         <!-- Right Side Icon -->
-        <div>
+        <div
+          class="flex gap-8 items-center text-xl font-bold text-[var(--text1)]"
+        >
           <!-- Shoping Card -->
           <i class="fa-solid fa-cart-shopping"></i>
 
           <!-- Mobile Menu Icon -->
-          <button>☰</button>
+          <button class="py-1 px-2 cursor-pointer" id="menuBtn">☰</button>
         </div>
 
         <!-- Mobile Dropdown -->
-        <div class="absolute top-full left-0 w-full text-center">
-          <ul>
-            <li><a href="#"></a>Home</li>
-            <li><a href="#"></a>Products</li>
-            <li><a href="#"></a>About</li>
-            <li><a href="#"></a>Contact</li>
+        <div
+          id="mobileMenu"
+          class="absolute top-full right-0 w-full text-center bg-blue-50/40 transform translate-x-full transition-transform duration-300"
+        >
+          <ul class="text-[var(--text1)]">
+            <li>
+              <a class="block py-2 hover:bg-blue-100/60" href="#">Home</a>
+            </li>
+            <li>
+              <a class="block py-2 hover:bg-blue-100/60" href="#">Products</a>
+            </li>
+            <li>
+              <a class="block py-2 hover:bg-blue-100/60" href="#">About</a>
+            </li>
+            <li>
+              <a class="block py-2 hover:bg-blue-100/60" href="#">Contact</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -72,7 +87,9 @@
 
     <!-- Main Section -->
 
-    <main></main>
+    <main
+      class="bg-[url(./assets/banner-image.png)] w-full h-40 bg-cover bg-center"
+    ></main>
 
     <!-- Footer Section -->
 
