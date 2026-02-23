@@ -39,12 +39,13 @@
     <header class="sticky top-0 bg-white shadow">
       <nav class="flex justify-between items-center relative px-[4%] py-2">
         <!-- Logo -->
+
         <div class="text-[var(--primary)] text-2xl font-extrabold">
           <a href="#">SwiftCart</a>
         </div>
         <!-- Desktop Menu -->
-        <div class="hidden">
-          <ul>
+        <div class="hidden sm:block">
+          <ul class="flex gap-6 text-sm font-semibold text-[var(--texta)]">
             <li><a href="#">Home</a></li>
             <li><a href="#">Products</a></li>
             <li><a href="#">About</a></li>
@@ -59,13 +60,15 @@
           <i class="fa-solid fa-cart-shopping"></i>
 
           <!-- Mobile Menu Icon -->
-          <button class="py-1 px-2 cursor-pointer" id="menuBtn">☰</button>
+          <button class="py-1 px-2 cursor-pointer sm:hidden" id="menuBtn">
+            ☰
+          </button>
         </div>
 
         <!-- Mobile Dropdown -->
         <div
           id="mobileMenu"
-          class="absolute top-full right-0 w-full text-center bg-blue-50/40 transform translate-x-full transition-transform duration-200 ease-in-out"
+          class="absolute top-full right-0 w-full text-center bg-blue-50/40 transform translate-x-full transition-transform duration-200 ease-in-out sm:hidden"
         >
           <ul class="text-[var(--text1)]">
             <li>
