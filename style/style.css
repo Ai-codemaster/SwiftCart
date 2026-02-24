@@ -1,10 +1,20 @@
-*{
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
-:root{
-    --primary: #4f39f6;
-    --text1: #101828;
-    --text2: #555f6e;
+:root {
+  --primary: #4f39f6;
+  --text1: #101828;
+  --text2: #555f6e;
+}
+
+#menu {
+  top: 0;
+  right: -100%;
+  transition: right 0.3s ease-in-out;
+}
+
+#menu.open{
+    right: 0;
 }

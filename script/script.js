@@ -1,9 +1,13 @@
-const btn = document.getElementById("menuBtn");
-const menu = document.getElementById("mobileMenu");
+const menuBtn = document.getElementById('menuBtn');
+const menu = document.getElementById('menu');
+const backBox = document.getElementById('backBox');
 
-btn.addEventListener("click", () => {
-  menu.classList.toggle("translate-x-full");
-  menu.classList.toggle("translate-x-0");
-  const isOpen = !menu.classList.contains("translate-x-full");
-  btn.innerHTML = isOpen ? "✕" : "☰";
+menuBtn.addEventListener('click', () => {
+  menu.classList.toggle('open');
+  backBox.classList.toggle('hidden');
 });
+
+backBox.addEventListener('click', () => {
+  menu.classList.remove('open');
+  backBox.classList.add('hidden');
+})

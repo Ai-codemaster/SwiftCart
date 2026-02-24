@@ -36,63 +36,59 @@
   <body>
     <!-- Header Section -->
 
-    <header class="sticky top-0 bg-white shadow">
-      <nav class="flex justify-between items-center relative px-[4%] py-2">
+    <header class="shadow-lg">
+      <nav class="relative flex justify-between items-center px-[4%] py-2">
         <!-- Logo -->
-
-        <div class="text-[var(--primary)] text-2xl font-extrabold">
+        <div class="text-2xl font-bold text-[var(--primary)]">
           <a href="#">SwiftCart</a>
         </div>
-        <!-- Desktop Menu -->
-        <div class="hidden sm:block">
-          <ul class="flex gap-6 text-sm font-semibold text-[var(--texta)]">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+        <!-- Menu -->
+        <div id="menu" class="fixed w-1/2 h-full bg-white/80 z-50">
+          <ul class="flex flex-col gap-1">
+            <li>
+              <a
+                class="py-2 block hover:bg-blue-100 active:bg-blue-100 pl-[4%]"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="py-2 block hover:bg-blue-100 active:bg-blue-100 pl-[4%]"
+                href="#"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a
+                class="py-2 block hover:bg-blue-100 active:bg-blue-100 pl-[4%]"
+                href="#"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="py-2 block hover:bg-blue-100 active:bg-blue-100 pl-[4%]"
+                href="#"
+                >Contacts</a
+              >
+            </li>
           </ul>
         </div>
-        <!-- Right Side Icon -->
-        <div
-          class="flex gap-8 items-center text-xl font-bold text-[var(--text1)]"
-        >
-          <!-- Shoping Card -->
+        <!-- Menu Icon & Shoping Card -->
+        <div class="flex gap-6 justify-center items-center text-xl">
           <i class="fa-solid fa-cart-shopping"></i>
 
-          <!-- Mobile Menu Icon -->
-          <button class="py-1 px-2 cursor-pointer sm:hidden" id="menuBtn">
-            ☰
-          </button>
+          <button id="menuBtn" class="text-2xl px-2">☰</button>
         </div>
-
-        <!-- Mobile Dropdown -->
-        <div
-          id="mobileMenu"
-          class="absolute top-full right-0 w-full text-center bg-blue-50/40 transform translate-x-full transition-transform duration-200 ease-in-out sm:hidden"
-        >
-          <ul class="text-[var(--text1)]">
-            <li>
-              <a class="block py-2 hover:bg-blue-100/60" href="#">Home</a>
-            </li>
-            <li>
-              <a class="block py-2 hover:bg-blue-100/60" href="#">Products</a>
-            </li>
-            <li>
-              <a class="block py-2 hover:bg-blue-100/60" href="#">About</a>
-            </li>
-            <li>
-              <a class="block py-2 hover:bg-blue-100/60" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
+        <!-- Mobile Menu Clolse Box -->
+        <div id="backBox" class="fixed inset-0 bg-black/50 z-40 hidden"></div>
       </nav>
     </header>
 
     <!-- Main Section -->
 
-    <main
-      class="bg-[url(./assets/banner-image.png)] w-full h-90 bg-cover bg-center"
-    ></main>
+    <main></main>
 
     <!-- Footer Section -->
 
