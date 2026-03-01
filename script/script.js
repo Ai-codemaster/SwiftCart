@@ -40,9 +40,9 @@ function showTrendingProducts(products) {
       .map((w) => w[0].toUpperCase() + w.slice(1))
       .join(" ");
     trendingProductContainer.innerHTML += `
-     <div class="shadow rounded-lg">
+     <div class="shadow rounded-lg flex flex-col h-full justify-between">
               <img
-                class="bg-[#e5e7eb] px-8 py-4 rounded-t-lg"
+                class="bg-[#e5e7eb] px-8 py-4 rounded-t-lg mx-auto w-full "
                 src="${products.image}"
                 alt=""
               />
